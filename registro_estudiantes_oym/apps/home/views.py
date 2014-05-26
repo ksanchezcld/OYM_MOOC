@@ -3,7 +3,7 @@ from django.shortcuts 	  import render_to_response, get_object_or_404
 from django.template  	  import RequestContext
 from django.http      	  import HttpResponseRedirect, HttpResponse
 from django.db.models     import Count, Avg
-import time
+import datetime
 
 from django.core.urlresolvers import reverse_lazy
 from django.core.paginator    import Paginator, EmptyPage, InvalidPage
@@ -26,7 +26,7 @@ def index_view(request):
     seccion    	= Seccion.objects.all()
     nom_prof    = Profesor.objects.all()
     periodo     = Periodo.objects.all()
-    hora        = time.time()
+    hora        = datetime.datetime.now()
     ctx         = {'materia':materia, 'cap_mat':cap_mat,'texto':texto, 'seccion':seccion, 'nom_prof':nom_prof, 'hora':hora}
 
     return render_to_response('home/index.html',ctx,context_instance=RequestContext(request))
