@@ -1,0 +1,16 @@
+<html><head>
+<title>::.Registro Estudiantes O&M</title>
+ <!-- Bootstrap core CSS -->
+    <link href="../../media/bootstrap/round-about/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom CSS for the 'Round About' Template -->
+    <link href="../../media/bootstrap/round-about/css/round-about.css" rel="stylesheet">
+
+</head>
+<body>
+<center><h1>LOGIN</h1></center>
+<center><label for="Usuario">Usuario</label><input type="text" name="usuario" value="usuario" /><p></center>
+<center><label for="Password">Password</label><input type="password" name="password" value=""/></center>
+<p>
+<center><input type="submit" name="login" value="login" /></center>
+</body>
+</html>

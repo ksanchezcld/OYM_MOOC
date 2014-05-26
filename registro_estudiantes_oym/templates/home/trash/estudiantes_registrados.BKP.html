@@ -1,0 +1,132 @@
+<!--
+!-->
+
+<!-- 
+- Agregar estrellitas de acuerdo a los puntos acumulados(5) y organizar de mayor puntuacion a menor
+
+- Colocar un listbox para filtrar los estudiantes por grupos(grupo1, grupo2)
+!-->
+
+{% extends 'home/base.html' %}
+{% block title %}::.Listado Estudiantes O&amp;M.::{% endblock %}
+{% block content%}
+<link rel="stylesheet" href="../../media/bootstrap/round-about/css/bootstrap.css">
+<link rel="stylesheet" href="../../media/bootstrap/round-about/css/round-about.css">
+
+	<div class="row">
+	 <div class="col-lg-12">
+	  <h2 class="page-header">
+		<center>{{msg|title}}</center>
+	</h2>
+   </div>
+  </div>
+<style type="text/css">
+	.estd_ul{margin:0;padding:0 70px;width:999px;height:300px;list-style:none outside none;}
+	.estd_ul li{float: left;text-align:center;width:280px}
+	</style>
+   		<div class="row-container">
+			<center>
+		   	  <br>
+		   	  <ul class="estd_ul"> 
+		   	  	  {% for estd in estudiante %}
+		   	  	 	 <li><img style="width: 100px; height: 100px;" alt="foto" src="{{MEDIA_URL}}{{estd.foto}}" class="foto">
+			 		 <h3>{{estd.nombre|capfirst}} {{estd.apellido|capfirst}}<small><p> ({{estd.matricula}})</small></h3>
+			      {% for correo in correo %}
+			 		      {% if correo.estudiante_id == estd.id %} 
+					          <p>{{correo.correo}}</p>
+			 		      {% endif %}
+			      {% endfor %}
+
+			      {% for grupo in grupo %}
+					  	  {% if estd.grupo_id == grupo.id %}
+					          <p><b>Grupo:</b>{{grupo.num_grp}}</p>
+					  	  {% endif %}
+				  {% endfor %}
+				  <button class="btn btn-primary">Reporte</button><p><br><br><p>
+			 	</li>
+		   	 {% endfor %}
+				</ul>
+			   </center>
+			  </div> 
+			   <div class="row text-center">
+		        <div class="col-lg-12">
+		        	<hr>
+
+		          <ul class="pagination">
+		          	{% if is_paginated %}
+		        		{% if page_obj.has_previous %}
+		          			<li><a href="{{page_obj.previous_page_number}}">«</a></li>
+		          		{% endif %}
+		          	    <li><a href="{{page_obj.start_index}}">1</a></li>
+			            <li><a href="{{page_obj.next_page_number}}">2</a> </li>
+		                <li><a href="{{page_obj.next_page_number}}">3</a> </li>
+		            	<li><a href="{{page_obj.next_page_number}}">4</a> </li>
+		            	<li><a href="{{page_obj.next_page_number}}">5</a> </li>
+			    	    {% if page_obj.has_next%}
+		                	<li><a href="{% url "vista_registrados" %}?pagina={{page_obj.next_page_number}}">»</a> </li>
+		                {% endif %}		
+		            {% endif %}
+		            <br><br>
+		            <b>Pagina {{ page_obj.number }} de {{ page_obj.paginator.num_pages }}</b>
+		          </ul>
+		        </div>
+		      </div>
+		   	  	  <!--
+		   	  <li>
+			 	 <img style="width: 100px; height: 100px;" alt="foto" src="{{MEDIA_URL}}{{estd.foto}}" class="foto">
+			 	 <h3>{{estd.nombre|capfirst}} {{estd.apellido|capfirst}}<small><p> ({{estd.matricula}})</small></h3>
+			 		  {% for correo in correo %}
+			 		      {% if correo.estudiante_id == estd.id %} 
+					          <p>{{correo.correo}}</p>
+			 		      {% endif %}
+					  {% endfor %}
+				
+					  {% for grupo in grupo %}
+					  	  {% if estd.grupo_id == grupo.id %}
+					          <p><b>Grupo:</b>{{grupo.num_grp}}</p>
+					  	  {% endif %}
+				   	  {% endfor %}
+
+				 <button class="btn btn-primary">Reporte</button><p>
+			 </li>
+			 {% if forloop.counter|divisibleby:"3" and not forloop.last %}</ul><ul class="estd_ul">{% endif %}
+			 !-->
+			 
+
+<!-- 
+- Agregar estrellitas de acuerdo a los puntos acumulados(5) y organizar de mayor puntuacion a menor
+
+- Colocar un listbox para filtrar los estudiantes por grupos(grupo1, grupo2)
+
+		    <div class="row text-center">
+	        <div class="col-lg-12">
+	        	<hr>
+	          <ul class="pagination">
+	          	{% if lista_est %}
+	          		<li><a href="/registrados/pagina/1/">«</a></li>
+	          	{% if lista_est.has_previous %}
+
+	          	COMO HACER QUE EL PAGINADO SE GENERE DINAMICAMENTE [1][2][3]...[10]
+		            <li><a href="registrados/pagina/1/">1</a></li>
+		            <li><a href="/registrados/pagina/2/">2</a> </li>
+	                <li><a href="/registrados/pagina/3/">3</a> </li>
+	            	<li><a href="/registrados/pagina/4/">4</a> </li>
+	            	<li><a href="/registrados/pagina/5/">5</a> </li>
+		        {% else %}
+		        	<li><a href="#">2</a> </li>
+	            {% endif %}
+	            <li><a href="/registrados/pagina/{{ lista_est.paginator.num_pages }}/">»</a> </li>
+	            <br><br>
+	            Pagina {{lista_est.number}} de {{lista_est.paginator.num_pages}}
+	            {% endif %}
+	          </ul>
+	        </div>
+	      </div>
+
+{% endblock %}
+!-->
+<!--
+<script src="../../media/bootstrap/round-about/js/jquery-1.10.2.js"></script>
+<script src="../../media/bootstrap/round-about/js/bootstrap.js"></script></div>
+!-->
+

@@ -1,0 +1,17 @@
+<html><head><title>::.Listado de Estudiantes.::</title></head>
+<body>
+	<center><h1><b>Listado Estudiantes Universidad O&M</b></h1></center>
+		{% if estudiantes %}
+			{% for e in estudiantes %}
+				<p>Matricula: {{e.matricula}}</p>
+				<p>Nombres:   {{e.nombres}}</p>
+				<p>Apellidos: {{e.apellidos}}</p>
+				<p>Correo:	  {{e.email}}</p>
+				<p>Telefono:  {{e.telefono}}</p>
+				<p>Detalle:   {{e.descripcion}}</p>
+			{% endfor %}
+		{% else %}
+			<h2><center><b>Lo sentimos. No existen estudiantes registrados en el sistema...</b></center></h2>
+		{% endif %}
+</body>
+</html>

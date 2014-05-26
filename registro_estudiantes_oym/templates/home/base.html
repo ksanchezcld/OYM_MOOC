@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <header>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Kennedy Sanchez" ><title>{% block title %}{% endblock %}</title>
+
+    <link rel="stylesheet" href="../../media/bootstrap/dist/css/bootstrap.min.css" ><!-- Iconos!-->
+    <link rel="stylesheet" href="../../media/css/bootstrap.css">
+    <link rel="stylesheet" href="../../media/css/3-col-portfolio.css">
+    <link rel="stylesheet" href="../../media/css/background_color.css">
+    <link rel="stylesheet" href="../../media/css/estilo_index_oym.css" type="text/css">
+     			<!--<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">!-->
+          <nav class="navbar navbar-inverse" role="navigation">
+            <!--<div class="container">!-->
+            <div class="navbar-header">
+                <ul class="nav navbar-nav">
+                  <!--<li><a class="brand"><h3>Universidad O&M</h3></a></li>!-->
+                  {% if user.is_authenticated %}
+                      <li><a href="/"><i class="glyphicon  glyphicon-home"></i> Pagina principal |</a></li>
+                      <li><a href="/materia/"><i class="glyphicon  glyphicon-tasks"></i> Programa Clases |</a></li>
+                      <li><a href="/reglamento/"><i class="glyphicon  glyphicon-eye-open"></i> Reglamento |</a></li>
+                      <li class ="dropdown">
+                      <a href="" class="dropdown-toggle" data-toggle="dropdown"/><i class="glyphicon  glyphicon-th"></i> Estudiantes |<b class="caret"></b></a>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                          <li><a href="/reg_estudiantes/">Registro Estudiante</a></li>
+                          <li><a href="/registrados/pagina/1/"></a></li>
+                          <li><a href="/reporte/">Reporte Calificaciones</a></li>
+                      </ul>
+                    </li>
+                      <li><a href="/audiovisuales/"><i class="glyphicon  glyphicon-headphones"></i> Audiovisuales |</a></li>
+                      <li><a href="#"><i class="glyphicon  glyphicon-list-alt"></i> Biblioteca |</a></li>
+                      <li><a href="#"><i class="glyphicon  glyphicon-list-alt"></i> Q&A |</a></li>
+                      <li><a href="/certificados/"><i class="glyphicon  glyphicon-star"></i> Certificados |</a></li>
+                      <li><a href="/logout/"><i class="glyphicon  glyphicon-off"></i> Logout</a></li>
+                      <li class="usuario"><a href="#">| <i class="glyphicon  glyphicon-user"></i><b> Usuario : [ {{user.username}} ]</b></a></li>
+                    {% else %}
+                       <li><a href="/login/"><i class="glyphicon  glyphicon-hand-right"></i> Ingresar</a></li>
+                       <li><a href="/about/"><i class="glyphicon  glyphicon-user"></i> Acerca de...</a></li>
+
+                    {% endif %}
+               </ul>
+              </div>
+             </nav>
+            </header>
+           <body>
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <td align="center">
+                <div class="logo"><br>
+                  <img src="../../media/images/logo/logo.jpg" alt="logoym"></img>
+                  <hr>
+                </div>
+              </td>
+            </table>
+          <section>
+            {% block content %}{% endblock %}
+          </section>
+             <br><br><br><br><br><br>
+               <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <td align="center">
+                    <div class="sponsors">
+          <a href="http://incube2.com/" target="_blank"><img style="height: 75px;" class="img-rounded" src="../../media/images/sponsors/incube2log.png"></a></img>
+         <a href="https://www.udacity.com/courses#%21/All" target="_blank"><img style="border: 0px solid ; width: 55px; height: 45px;" alt="udacity" class="img-rounded" src="../../media/images/sponsors/udacity.jpg"></a></img>
+         <a href="http://opensource.org/" target="_blank"><img style="width: 75px; height: 75px;" class="img-rounded" src="../../media/images/sponsors/Opensource.png"></a></img>
+        <br><br>
+      <div id="copyr" style="text-align: center;"><span style="font-weight: bold; color:#000000;">Copyright © ksanchez 2014</span>
+     </div>
+    </div>
+   </td>
+  </table>
+ </body>
+</html>

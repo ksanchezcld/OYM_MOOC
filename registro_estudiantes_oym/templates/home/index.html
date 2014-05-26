@@ -1,0 +1,77 @@
+{% extends 'home/base.html' %}
+{% block title %}::.Sistema Universidad O&amp;ap;M.::{% endblock %}
+{% block content %}
+     <div id="materia"><big><span style="font-weight: bold;">
+          {% for materia in materia %}
+              <h2><b>Materia: {{materia.descripcion}}</b></h2></span>
+          {% endfor %} 
+    </div>
+<br>
+<link href="../media/css/lightbox.css" rel="stylesheet" />
+
+<div id="main"> 
+  <div class="panel-izquierdo">
+    <div class="libronos">
+      <a class="img-rounded" href="../../media/images/libros/portada/front/nos/Sistemas_oper_Modernos_3ra_ed.jpg" data-lightbox="roadtrip">
+
+      <IMG SRC="../../media/images/libros/portada/front/nos/Sistemas_oper_Modernos_3ra_ed.jpg" width="200" heigth="200" alt="Libro Sistemas Operativos Modernos" width="200" height="250"></IMG></a>
+</div>
+<br>
+  <div class="librored">
+      <a class="img-rounded" href="../../media/images/libros/portada/front/networking/Redes_Computadoras_4ta_ed_Andrew_Tanenbaum.jpg" data-lightbox="roadtrip">
+    
+      <IMG SRC="../../media/images/libros/portada/front/networking/Redes_Computadoras_4ta_ed_Andrew_Tanenbaum.jpg" width="200" height="250" alt="Libro Redes de Computadoras"></IMG></a>
+    </div>
+  </div>
+</div>
+</big>
+<div class="panel-central" align="center"> 
+      <br><br><br><br><br><br>
+	    <big>Los temas que seran tratados en este apartado son<p>
+		exclusivamente de la materia de Sistemas Operativos II. 
+   		Este es un programa de ensenanza en linea que
+		esta formado por videotutoriales, libros, examenes digitales,y muchos 
+		recursos mas a disposicion del estudiantado de la Universidad O&amp;M. </big><p>
+</div> 
+
+<div class="panel-derecho"><div  class="btn"><a href="login/"><button class="btn-info"><h4>Ingresar al Curso</button></h4></a><p><br>
+
+      {% for seccion in Seccion %} 
+          <b>Seccion:{{seccion.num_seccion}}</b>
+      {% endfor %}
+      
+      {% for periodo in periodo %} 
+          <b>Periodo:{{periodo.fdesde|capfirst}}/{{periodo.fhasta|capfirst}}</b></p><p>
+      {% endfor %} 
+      
+      {% for nom_prof in nom_prof %} 
+          <b>{{nom_prof.nombre|capfirst}}  {{nom_prof.apellido|capfirst}}</b>
+      {% endfor %} </p>
+    
+    <a href="about/"> <img class="img-circle" src="../../media/images/usuarios/ksanchez.jpg" height="90" width="100"></a>
+
+    <h3><span class="label label-danger">Instructor</span></h3>
+    <p><br>
+
+    <b>Contactos</b></p>
+     
+      <a href="http://do.linkedin.com/pub/dir/Kennedy/Sanchez" target="_blank"> 
+          <img style="width: 47px; height: 47px;" alt="linkedin" src="../../media/images/redes/linkedin/LinkedIn.jpeg"></a>
+     <a href="http://www.twitter.com/" target="_blank">
+          <img style="width: 47px; height: 47px;" alt="twitter" src="../../media/images/redes/twitter/twitter.jpeg"></a><p>
+     <a href="https://www.youtube.com/channel/UCYXR6jyFsPyK0IW9d13U8bQ" target="_blank">
+          <img style="width: 47px; height: 47px;" alt="youtube" src="../../media/images/redes/google/youtube/youtube_logo-lg.png"></a>
+     <a href="http://dev4sec.blogspot.com/" target="_blank">
+          <img style="width: 47px; height: 47px;" alt="blogger" src="../../media/images/redes/google/blogger/Blogger_logo.png"></a><p>
+          <img style="width: 47px; height: 47px;" alt="gmail" src="../../media/images/redes/google/gmail/gmailenvelop.jpg">
+          <img style="width: 47px; height: 47px;" alt="hotmail" src="../../media/images/redes/Microsoft/Wlhlogo.png"><p><br>
+          <h4><b>Horario: <p><br> Martes: 8:00-10:00pm<p> Miercoles: 7:00-8:00pm</b></h4>
+          <span style="color:red"><br><h4><b>Hora actual: 8:00pm::{{hora}}</b></h4></span>
+  </div>
+ </div> 
+</div> 
+    <script src="../media/js/jquery-1.10.2.min.js"></script>
+    <script src="../media/js/lightbox-2.6.min.js"></script>
+{% endblock %}
+
+
