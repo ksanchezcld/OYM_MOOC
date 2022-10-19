@@ -86,7 +86,7 @@ kiki==0.5.6
 killerbee==1.0
 lightblue==0.3.2
 louis==2.4.1
-lxml==2.3.2
+lxml==4.9.1
 mechanize==0.2.5
 mitmproxy==0.8
 mysql-connector-python==0.3.2-devel
@@ -140,7 +140,7 @@ pyzmq==2.2.0
 queuelib==1.1.1
 reportbug==6.4.4
 reportlab==2.5
-requests==0.12.1
+requests==2.20
 rfidiot==1.0
 scapy==2.2.0
 selenium==2.40.0
