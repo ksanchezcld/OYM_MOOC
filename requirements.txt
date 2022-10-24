@@ -2,7 +2,7 @@ BBQSQL==1.0
 BeautifulSoup==3.2.1
 BlindElephant==1.0
 Brlapi==0.5.7
-Django==1.6.3
+Django==3.2.15
 Flask==0.10.1
 FlvLib==0.1.12
 Glances==1.7.3
@@ -24,7 +24,7 @@ PySensors==0.0.2
 PyX==0.11.1
 Pygments==1.5
 SOAPpy==0.12.0
-SQLAlchemy==0.7.8
+SQLAlchemy==1.2.18
 Scrapy==0.20.2
 South==0.8.4
 TraitsBackendQt==3.6.0
