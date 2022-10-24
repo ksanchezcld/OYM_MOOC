@@ -114,7 +114,7 @@ pyOpenSSL==0.13
 pyPdf==1.13
 pyasn1==0.1.3
 pychecker==0.8.19
-pycrypto==2.6
+pycrypto==2.6.1
 pycryptopp==0.5.29
 pycurl==7.19.0
 pydns==2.3.6
