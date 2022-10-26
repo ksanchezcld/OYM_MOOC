@@ -140,7 +140,7 @@ pyzmq==2.2.0
 queuelib==1.1.1
 reportbug==6.4.4
 reportlab==2.5
-requests==0.12.1
+requests==2.20
 rfidiot==1.0
 scapy==2.2.0
 selenium==2.40.0
