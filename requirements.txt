@@ -2,7 +2,7 @@ BBQSQL==1.0
 BeautifulSoup==3.2.1
 BlindElephant==1.0
 Brlapi==0.5.7
-Django==1.6.3
+Django==3.2.15
 Flask==0.10.1
 FlvLib==0.1.12
 Glances==1.7.3
@@ -114,7 +114,7 @@ pyOpenSSL==0.13
 pyPdf==1.13
 pyasn1==0.1.3
 pychecker==0.8.19
-pycrypto==2.6
+pycrypto==2.6.1
 pycryptopp==0.5.29
 pycurl==7.19.0
 pydns==2.3.6
@@ -140,7 +140,7 @@ pyzmq==2.2.0
 queuelib==1.1.1
 reportbug==6.4.4
 reportlab==2.5
-requests==0.12.1
+requests==2.20
 rfidiot==1.0
 scapy==2.2.0
 selenium==2.40.0
