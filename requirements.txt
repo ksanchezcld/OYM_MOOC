@@ -2,10 +2,10 @@ BBQSQL==1.0
 BeautifulSoup==3.2.1
 BlindElephant==1.0
 Brlapi==0.5.7
-Django==1.6.3
+Django==3.2.15
 Flask==0.10.1
 FlvLib==0.1.12
-Glances==1.7.3
+Glances==3.2.5
 GnuPGInterface==0.3.2
 ID3==1.2
 IPy==0.75
@@ -107,7 +107,7 @@ pencil==0.7
 pexpect==2.4
 pithos==0.3
 plumber==1.2
-psutil==1.2.1
+psutil==5.6.7
 psycopg2==2.4.5
 py-bcrypt==0.4
 pyOpenSSL==0.13
@@ -149,7 +149,7 @@ simplegeneric==0.8.1
 simplejson==2.5.2
 six==1.4.1
 tornado==2.3
-tweepy==1.7.1
+tweepy==2.3.1
 uTidylib==0.2
 ufw==0.31.1-2
 unattended-upgrades==0.1
