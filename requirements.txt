@@ -2,10 +2,10 @@ BBQSQL==1.0
 BeautifulSoup==3.2.1
 BlindElephant==1.0
 Brlapi==0.5.7
-Django==1.6.3
+Django==3.2.15
 Flask==0.10.1
 FlvLib==0.1.12
-Glances==1.7.3
+Glances==3.2.5
 GnuPGInterface==0.3.2
 ID3==1.2
 IPy==0.75
@@ -107,7 +107,7 @@ pencil==0.7
 pexpect==2.4
 pithos==0.3
 plumber==1.2
-psutil==1.2.1
+psutil==5.6.7
 psycopg2==2.4.5
 py-bcrypt==0.4
 pyOpenSSL==0.13
@@ -140,7 +140,7 @@ pyzmq==2.2.0
 queuelib==1.1.1
 reportbug==6.4.4
 reportlab==2.5
-requests==0.12.1
+requests==2.20
 rfidiot==1.0
 scapy==2.2.0
 selenium==2.40.0
