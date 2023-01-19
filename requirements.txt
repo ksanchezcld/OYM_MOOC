@@ -87,7 +87,7 @@ killerbee==1.0
 lightblue==0.3.2
 louis==2.4.1
 lxml==2.3.2
-mechanize==0.2.5
+mechanize==0.4.6
 mitmproxy==0.8
 mysql-connector-python==0.3.2-devel
 mysql-utilities==1.0.3
