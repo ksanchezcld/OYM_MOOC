@@ -76,7 +76,7 @@ hachoir-parser==1.3.4
 hachoir-urwid==1.1
 hachoir-wx==0.3
 httplib2==0.7.4
-ipython==0.13.1
+ipython==8.10.0
 itsdangerous==0.23
 jsonpickle==0.4.0
 kaa-base==0.99.1
