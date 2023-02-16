@@ -38,7 +38,7 @@ Twisted-News==12.0.0
 Twisted-Runner==12.0.0
 Twisted-Web==12.0.0
 Twisted-Words==12.0.0
-Werkzeug==0.9.4
+Werkzeug==2.2.3
 ## FIXME: could not find svn URL in dependency_links for this package:
 apsw==3.7.6.3-r1
 apt-xapian-index==0.45
