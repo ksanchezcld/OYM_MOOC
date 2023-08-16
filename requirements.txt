@@ -148,7 +148,7 @@ shodan==1.0.0
 simplegeneric==0.8.1
 simplejson==2.5.2
 six==1.4.1
-tornado==2.3
+tornado==6.3.3
 tweepy==1.7.1
 uTidylib==0.2
 ufw==0.31.1-2
