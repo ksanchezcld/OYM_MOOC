@@ -24,7 +24,7 @@ PySensors==0.0.2
 PyX==0.11.1
 Pygments==1.5
 SOAPpy==0.12.0
-SQLAlchemy==0.7.8
+SQLAlchemy==1.2.18
 Scrapy==0.20.2
 South==0.8.4
 TraitsBackendQt==3.6.0
