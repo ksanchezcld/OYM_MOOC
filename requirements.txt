@@ -143,7 +143,7 @@ reportlab==2.5
 requests==0.12.1
 rfidiot==1.0
 scapy==2.2.0
-selenium==2.40.0
+selenium==4.15.1
 shodan==1.0.0
 simplegeneric==0.8.1
 simplejson==2.5.2
