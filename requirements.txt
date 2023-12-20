@@ -100,7 +100,7 @@ oauthlib==0.1.2
 obexftp==0.23
 odict==1.5.1
 openshot==1.4.2
-paramiko==1.7.7.1
+paramiko==3.4.0
 passlib==1.6.1
 pcapy==0.10.8
 pencil==0.7
