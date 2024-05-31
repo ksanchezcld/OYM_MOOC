@@ -120,7 +120,7 @@ pycurl==7.19.0
 pydns==2.3.6
 pygeoip==0.3.0
 pygpgme==0.2
-pymongo==2.6.3
+pymongo==4.6.3
 pymssql==1.0.2
 pyrit==0.4.0
 pyscard==1.6.14
